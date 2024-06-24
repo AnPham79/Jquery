@@ -211,19 +211,63 @@ $(function () {
   }, 2000)
 
   // --------------------------- Thêm hoặc xóa các lớp css -------------------------------
-  $("a").addClass("fancy-link");
-  $("p:first").addClass("lange emphasize");
+  // $("a").addClass("fancy-link");
+  // $("p:first").addClass("lange emphasize");
 
-  $('li li').addClass(function(index) {
-      $(this).addClass("item-" + index);
-  })
+  // $('li li').addClass(function(index) {
+  //     $(this).addClass("item-" + index);
+  // })
 
-  $('div').addClass(function(index, curentClass){
-      if(curentClass === 'baby-shark')
-      {
-        return 'red-box'
-      }
-  });
+  // $('div').addClass(function(index, curentClass){
+  //     if(curentClass === 'baby-shark')
+  //     {
+  //       return 'red-box'
+  //     }
+  // });
 
-  $('.red-box').removeClass('red-box').addClass('blue-box');
+  // $('.red-box').removeClass('red-box').addClass('blue-box');
+
+  //  --------------------------- Thây đổi dữ liệu của 1 phần tử ---------------------------
+  // // Lấy phần tử đầu tiên trong danh sách sản phẩm
+  // var firstProduct = $("#product-list li").first();
+
+  // // Lấy dữ liệu hiện tại của sản phẩm đầu tiên
+  // var productId = firstProduct.data("id");
+  // var productName = firstProduct.data("name");
+  // var productPrice = firstProduct.data("price");
+
+  // console.log("Thông tin sản phẩm đầu tiên:");
+  // console.log("ID:", productId);
+  // console.log("Tên sản phẩm:", productName);
+  // console.log("Giá sản phẩm:", productPrice);
+
+  // // Thay đổi dữ liệu của sản phẩm đầu tiên
+  // firstProduct.data("price", 300000); // Thay đổi giá sản phẩm thành 300,000 đ
+
+  // // Lấy dữ liệu mới của sản phẩm đầu tiên sau khi thay đổi
+  // var newProductPrice = firstProduct.data("price");
+  // console.log("Giá sản phẩm sau khi thay đổi:", newProductPrice);
+
+  // // Đặt một dữ liệu mới
+  // firstProduct.data("discount", "10% giảm giá");
+
+  // // Lấy dữ liệu mới được đặt
+  // var discountInfo = firstProduct.data("discount");
+  // console.log("Thông tin giảm giá:", discountInfo);
+
+
+  // -------------------------- Truy xuất và thây đổi nội dung của 1 phần tử --------------------
+//   var firstPar = $('p:first');
+
+//   console.log(firstPar.text());
+//   console.log(firstPar.html());
+//   console.log($("p").html());
+
+// // sẻ hiện thẻ strong
+//   firstPar.text("<strong>Em không sai chúng ta yamate kudasai</strong>")
+
+// // sẽ sử dụng được strong
+//   firstPar.html("<strong>Em không sai chúng ta yamate kudasai</strong>")
+
+//   firstPar.html(firstPar.html() + 'I wanna suck my dick append')
 });
